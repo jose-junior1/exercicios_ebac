@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            body {
+                margin-top: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100vh;
+            }
+            
+            .container {
+                max-width: 1000px;
+            }
+
+            #slide img {
+                height: 600px;
+            }
+
+            .card-img-top {
+                padding: 25px;
+            }
+
+            .col {
+                background-color: #db1111;
+            }
+
+            .card {
+                height: 640px;
+                text-align: justify;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .card a {
+                width: 100%;
+                margin-top: auto;
+            }
+
+            footer {
+                text-align: center;
+                background-color: rgb(2, 56, 150);
+                padding: 20px 0;
+                top: 0;
+            }
+
+            footer p {
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1277767891/pt/foto/various-fresh-ripe-pumpkins-as-background.webp?s=1024x1024&w=is&k=20&c=-qb7vPiVBUFY9h_Sf3mVFH07LcOE6d1RbmvZmVypp5s=" alt="Abóboras">
+                    <div class="carousel-caption">
+                        <h2>Abóboras</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1278237930/pt/foto/carousel-in-paris.webp?s=1024x1024&w=is&k=20&c=RhvkORlLN25jJ86GczomDWQ1CbJrtnO9Zuy7yhi50BI=" alt="Carousel Outono">
+                    <div class="carousel-caption">
+                        <h2>Carousel outono</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1346087246/pt/foto/atlantic-forest-river-in-brazil.webp?s=1024x1024&w=is&k=20&c=XI2heYkunkI8hqioaEpr-k0oq7SzPpl_G6m4Jhz0QQQ=" alt="Floresta com rio">
+                    <div class="carousel-caption">
+                        <h2>Floresta</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1541870381/pt/foto/marmoset-looking-at-it-surroundings-from-a-tree-trunk.webp?s=1024x1024&w=is&k=20&c=0sLW8koYycfquZQhdLr-ku2bWkukOOtp0c0wn84D0eQ=" alt="Macaco na floresta">
+                    <div class="carousel-caption">
+                        <h2>Macaco na floresta</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#slide" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#slide" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel-ex" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+    
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/html5.png" class="card-img-top" alt="Imagem do card 1">
+                <div class="card-body">
+                    <h5 class="card-title">HTML 5</h5>
+                    <p class="card-text">HTML5 (HyperText Markup Language 5) é a versão mais recente da linguagem de marcação de hipertexto, utilizada para criar e estruturar páginas da web.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiqhtrU8vmJAxVqhIkEHbj_HmwQFnoECGMQAQ&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fpt-BR%2Fdocs%2FWeb%2FHTML&usg=AOvVaw1CPke7ATv9ZEAEjUphFrJQ&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/css.png" class="card-img-top" alt="Imagem do card 2">
+                <div class="card-body">
+                    <h5 class="card-title">CSS</h5>
+                    <p class="card-text">CSS3 é a terceira versão da linguagem Cascading Style Sheets (CSS), que significa Folha de Estilos em Cascata.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjFwtvL8vmJAxXov4kEHd6tEYEQFnoECFAQAQ&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fpt-BR%2Fdocs%2FWeb%2FCSS&usg=AOvVaw39RqyU0thVPmLqfsO-3GrB&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/js.png" class="card-img-top" alt="Imagem do card 3">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">JavaScript (JS) é uma linguagem de programação interpretada, baseada em objetos e leve, que é usada para adicionar interatividade a páginas web.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivvp688vmJAxX7v4kEHdR3G0AQFnoECBoQAQ&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fpt-BR%2Fdocs%2FWeb%2FJavaScript&usg=AOvVaw2EYVrghf5nessdBRSy-wTF&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/jquery.jpg" class="card-img-top" alt="Imagem do card 4">
+                <div class="card-body">
+                    <h5 class="card-title">jQuery</h5>
+                    <p class="card-text">jQuery é uma biblioteca JavaScript que facilita o desenvolvimento web, permitindo criar sites e aplicações com mais dinamismo.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj8jMWx8vmJAxW2lYkEHSgqD8wQFnoECA4QAQ&url=https%3A%2F%2Fjquery.com%2F&usg=AOvVaw1yb1TgbSxtZNKnsTynd_HN&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/bootstrap.png" class="card-img-top" alt="Imagem do card 5">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Bootstrap é um framework de código aberto e gratuito que permite o desenvolvimento de sites e aplicações web. </p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjL8af68fmJAxU7lYkEHY63JKEQFnoECBgQAQ&url=https%3A%2F%2Fwww.alura.com.br%2Fartigos%2Fbootstrap%3Fsrsltid%3DAfmBOoqXpdsY01vXvzxyOXzx_YS6m_zqXCyYSOf0aiUOylvJZ7UoOT8D&usg=AOvVaw0RHGvr-Mf76fJO6OSHTT_K&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="assets/img/vscode.jpg" class="card-img-top" alt="Imagem do card 6">
+                <div class="card-body">
+                    <h5 class="card-title">VS Code</h5>
+                    <p class="card-text">Este é o conteúdo do sexto card.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjmmv2d8vmJAxUSjokEHddOBVkQFnoECAwQAQ&url=https%3A%2F%2Fcode.visualstudio.com%2F&usg=AOvVaw15O90sm1ios8AUpw56hCml&opi=89978449" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>Dev - José Junior</p>
+        <p>&COPY;Todos os direitos reservados - 2024</p>
+    </footer>
+
+    <script src="assets/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
