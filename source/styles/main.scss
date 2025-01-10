@@ -1,0 +1,11 @@
+@use "./color.scss";
+@use "../config/reset.scss";
+
+body {
+    background-color: color.$bgColor;
+}
+
+section img {
+    height: 180px;
+    width: 220px;
+}

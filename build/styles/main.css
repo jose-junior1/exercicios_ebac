@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+section img {
+  height: 180px;
+  width: 220px;
+}
+/*# sourceMappingURL=maps/main.css.map */
